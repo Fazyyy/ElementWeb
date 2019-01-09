@@ -1,5 +1,5 @@
 $(function() {
-    var header = $(".main");
+    var header = $(".mainNav");
     $(window).scroll(function() {    
         var scroll = $(window).scrollTop();
     

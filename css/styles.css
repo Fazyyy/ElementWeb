@@ -10,7 +10,7 @@ a, p {
   font-family: "Roboto Condensed";
 }
 
-nav.main {
+nav.mainNav {
   position: fixed;
   width: 100%;
   padding: 30px 0;
@@ -18,15 +18,16 @@ nav.main {
   top: 0;
   left: 0;
   background: rgba(255, 255, 255, 0.4);
+  transition: 0.5s ease;
 }
-nav.main a {
+nav.mainNav a {
   line-height: 40px;
 }
-nav.main a h1 {
+nav.mainNav a h1 {
   color: #363636;
   font-size: 30px;
 }
-nav.main ul {
+nav.mainNav ul {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -35,12 +36,15 @@ nav.main ul {
   padding: 0;
   margin: 0;
 }
-nav.main ul li a {
+nav.mainNav ul li {
+  padding: 0 10px;
+}
+nav.mainNav ul li a {
   line-height: 40px;
   color: rgba(61, 61, 61, 0.69);
 }
 
-.header-alt {
+nav.header-alt {
   padding: 15px 0;
 }
 
