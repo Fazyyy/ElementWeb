@@ -42,14 +42,21 @@ table {
 	border-spacing: 0;
 }
 
+*:hover {
+    text-decoration: none !important;
+}
+
 html {
     overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family:"Roboto";
     color: #363636;
     font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 26px;
 }
 
 a, p {
@@ -63,7 +70,7 @@ nav.mainNav {
     border-bottom: 1px solid rgba(0,0,0,.08);
     top: 0;
     left: 0;
-    background: rgba(255,255,255,0.4);
+    background: rgba(255,255,255,0.8);
     transition: 0.5s ease;
     z-index: 10;
     a {
@@ -71,6 +78,7 @@ nav.mainNav {
         h1 {
             color: #363636;
             font-size: 30px;
+            margin: 0;
         }
     }
     ul {
@@ -99,8 +107,38 @@ nav.header-alt {
     background-image: url('../img/design-example.jpg');
     background-position: 50% 50%;
     background-size: cover;
-    min-height:100vh;
+    background-attachment: fixed;
+    height:100vh;
     width:100%;
+    position: relative;
+    &:after {
+        background-color: #2f9bee;
+        background-image: linear-gradient(to right,#2f9bee,#47c9e5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        height:100%;
+        width: 100%;
+        content: "";
+        z-index: 1;
+        opacity: 0.6;
+    }
+    .container {
+        position: relative;
+        height: 100vh;
+        z-index: 2;
+        .content {
+            position: absolute;
+            bottom: 25%;
+            left: 50px;
+            h2 {
+                color: #fff;
+                font-size: 6rem;
+                width:0px;
+                text-transform: capitalize;
+            }
+        }
+    }
 }
 
 
