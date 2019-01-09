@@ -42,6 +42,10 @@ nav.main {
     }
 }
 
+.header-alt {
+    padding: 15px 0;
+}
+
 .banner {
     background-image: url('../img/design-example.jpg');
     background-position: center;
@@ -57,7 +61,7 @@ nav.main {
     .carousel-cell {
     width: 25%;
     height: 200px;
-    margin-right: 10px;
+    margin-right: 0;
     background-color: #2f9bee;
     background-image: linear-gradient(to right,#2f9bee,#47c9e5);
     border-radius: 5px;
