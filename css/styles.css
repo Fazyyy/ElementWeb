@@ -205,6 +205,9 @@ nav.header-alt {
   float: left;
   margin-top: 10px;
   transition: 0.5s ease;
+  -webkit-box-shadow: 2px 8px 25px 1px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 2px 8px 25px 1px rgba(0, 0, 0, 0.6);
+  box-shadow: 2px 8px 25px 1px rgba(0, 0, 0, 0.6);
 }
 .grid .grid-item .hover {
   position: absolute;
@@ -250,13 +253,42 @@ nav.header-alt {
 .blurb .services .col-c {
   background: rgba(255, 255, 255, 0);
   transition: 0.5s ease;
-  padding: 25px 0;
+  padding: 25px 15px;
 }
 .blurb .services .col-c:hover {
   background: rgba(255, 255, 255, 0.1);
 }
 .blurb .services .col-c h2 {
   margin: 15px 0;
+}
+
+.workWith {
+  padding: 50px 0;
+}
+.workWith h2 {
+  margin-bottom: 50px;
+}
+.workWith img {
+  filter: url("http://www.uprisevsi.co.uk/templates/js/filters.svg#grayscale");
+  filter: gray;
+  -webkit-filter: grayscale(1);
+  transition: 0.5s ease;
+}
+.workWith img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+}
+
+footer {
+  background: #363636;
+  padding: 50px;
+}
+footer p, footer a {
+  color: #fff;
+}
+
+.t-right {
+  text-align: right;
 }
 
 /*# sourceMappingURL=styles.css.map */
