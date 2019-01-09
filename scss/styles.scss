@@ -51,12 +51,21 @@ html {
     scroll-behavior: smooth;
 }
 
+.pt25 {
+    padding-top: 25px;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family:"Roboto";
     color: #363636;
     font-weight: 700;
     margin-bottom: 15px;
     font-size: 26px;
+}
+
+p {
+    font-size: 20px;
+    line-height:1.1;
 }
 
 a, p {
@@ -141,6 +150,13 @@ nav.header-alt {
     }
 }
 
+.intro {
+    padding: 115px 0 90px 0;
+    .col {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
 
 .carousel {
   padding: 25px 0;
@@ -211,4 +227,31 @@ nav.header-alt {
                 max-width: 100%;
             }
         }
+}
+
+.blurb {
+    margin-top: 50px;
+    padding: 50px 0;
+    background-color: #2f9bee;
+    background-image: linear-gradient(to right,#2f9bee,#47c9e5);
+    h2, p {
+        color: #fff;
+    }
+    .col-c {
+        max-width:80%;
+        margin: 0 auto;
+    }
+    .services {
+        .col-c {
+            background: rgba(255,255,255,0);
+            transition: 0.5s ease;
+            padding: 25px 0;
+            &:hover {
+                background: rgba(255,255,255,0.1);
+            }
+            h2 {
+                margin: 15px 0;
+            }
+        }
+    }
 }
