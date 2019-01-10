@@ -96,6 +96,16 @@ nav.mainNav {
             color: #363636;
             font-size: 30px;
             margin: 0;
+            display: inline-block;
+            line-height:40px;
+            height:40px;
+            vertical-align: middle;
+            position: relative;
+            span {
+                top:0;
+                left: 45px;
+                position:absolute;
+            }
         }
     }
     ul {
@@ -220,17 +230,29 @@ nav.header-alt {
                 display:flex;
                 flex-direction: column;
                 justify-content: center;
-                background: rgba(0,0,0,0);
+                background: rgba(0,0,0,0.4);
                 transition: 0.5s ease;
                 pointer-events: none;
+                opacity: 0;
                 h3 {
                     color: #fff;
+                }
+                img {
+                    display: block;
+                    max-width: 50%;
+                    height: auto;
+                    margin: 0 auto;
+                    opacity: 0;
+                    transition: 0.5s ease;
                 }
             }
             &:hover {
                 margin-top:5px;
                 .hover {
-                    background: rgba(0,0,0,0.4);
+                    opacity: 1;
+                }
+                img {
+                    opacity: 1;
                 }
             }
             img {

@@ -104,6 +104,16 @@ nav.mainNav a h1 {
   color: #363636;
   font-size: 30px;
   margin: 0;
+  display: inline-block;
+  line-height: 40px;
+  height: 40px;
+  vertical-align: middle;
+  position: relative;
+}
+nav.mainNav a h1 span {
+  top: 0;
+  left: 45px;
+  position: absolute;
 }
 nav.mainNav ul {
   display: flex;
@@ -227,18 +237,30 @@ nav.header-alt {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0.4);
   transition: 0.5s ease;
   pointer-events: none;
+  opacity: 0;
 }
 .grid .grid-item .hover h3 {
   color: #fff;
+}
+.grid .grid-item .hover img {
+  display: block;
+  max-width: 50%;
+  height: auto;
+  margin: 0 auto;
+  opacity: 0;
+  transition: 0.5s ease;
 }
 .grid .grid-item:hover {
   margin-top: 5px;
 }
 .grid .grid-item:hover .hover {
-  background: rgba(0, 0, 0, 0.4);
+  opacity: 1;
+}
+.grid .grid-item:hover img {
+  opacity: 1;
 }
 .grid .grid-item img {
   display: block;
