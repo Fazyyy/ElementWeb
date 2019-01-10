@@ -456,6 +456,7 @@ footer {
     top: 50%;
     overflow:hidden;
     width: 120px;
+    transform: translate(0,-50%);
     li {
         display:block;
         position: relative;

@@ -457,6 +457,7 @@ footer p, footer a {
   top: 50%;
   overflow: hidden;
   width: 120px;
+  transform: translate(0, -50%);
 }
 .navMenu li {
   display: block;
