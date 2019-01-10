@@ -92,6 +92,8 @@ nav.mainNav {
   top: 0;
   left: 0;
   background: rgba(255, 255, 255, 0.8);
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
   transition: 0.5s ease;
   z-index: 10;
 }
@@ -117,9 +119,17 @@ nav.mainNav a h1 span {
   position: absolute;
 }
 nav.mainNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
   list-style-type: none;
   padding: 0;
@@ -148,6 +158,9 @@ nav.header-alt {
 }
 .banner:after {
   background-color: #2f9bee;
+  background-image: -webkit-gradient(linear, left top, right top, from(#2f9bee), to(#47c9e5));
+  background-image: -webkit-linear-gradient(left, #2f9bee, #47c9e5);
+  background-image: -o-linear-gradient(left, #2f9bee, #47c9e5);
   background-image: linear-gradient(to right, #2f9bee, #47c9e5);
   position: absolute;
   top: 0;
@@ -175,8 +188,23 @@ nav.header-alt {
   text-transform: capitalize;
 }
 
+@media (max-width: 560px) {
+  .banner {
+    height: 50vh;
+  }
+  .banner .container .content {
+    bottom: initial;
+    top: 120px;
+    left: 7.5%;
+    right: initial;
+  }
+  .banner .container .content h2 {
+    font-size: 3rem;
+  }
+}
 .intro {
-  padding: 115px 0 90px 0;
+  padding-top: 115px;
+  padding-bottom: 90px;
 }
 .intro .col {
   max-width: 80%;
@@ -194,15 +222,16 @@ nav.header-alt {
   height: auto;
 }
 
+@media (max-width: 460px) {
+  .carousel .carousel-cell {
+    width: 90%;
+  }
+}
 .portfolioHome {
   padding: 25px 0;
 }
 
 /* ---- grid ---- */
-.grid {
-  max-width: 1140px;
-  margin: 0 auto;
-}
 .grid:after {
   content: "";
   display: block;
@@ -215,9 +244,10 @@ nav.header-alt {
 .grid .grid-item {
   float: left;
   margin-top: 10px;
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
   transition: 0.5s ease;
   -webkit-box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.4);
   box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.4);
 }
 .grid .grid-item .hover {
@@ -227,10 +257,19 @@ nav.header-alt {
   height: 100%;
   width: 100%;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   background: rgba(0, 0, 0, 0.4);
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
   transition: 0.5s ease;
   pointer-events: none;
   opacity: 0;
@@ -244,6 +283,8 @@ nav.header-alt {
   height: auto;
   margin: 0 auto;
   opacity: 0;
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
   transition: 0.5s ease;
 }
 .grid .grid-item:hover {
@@ -260,10 +301,20 @@ nav.header-alt {
   max-width: 100%;
 }
 
+@media (max-width: 560px) {
+  .grid .grid-item,
+.grid .grid-sizer {
+    width: 85%;
+    width: calc(100% - 30px);
+  }
+}
 .blurb {
   margin-top: 50px;
   padding: 50px 0;
   background-color: #2f9bee;
+  background-image: -webkit-gradient(linear, left top, right top, from(#2f9bee), to(#47c9e5));
+  background-image: -webkit-linear-gradient(left, #2f9bee, #47c9e5);
+  background-image: -o-linear-gradient(left, #2f9bee, #47c9e5);
   background-image: linear-gradient(to right, #2f9bee, #47c9e5);
 }
 .blurb h2, .blurb p {
@@ -275,6 +326,8 @@ nav.header-alt {
 }
 .blurb .services .col-c {
   background: rgba(255, 255, 255, 0);
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
   transition: 0.5s ease;
   padding: 25px 15px;
 }
@@ -286,15 +339,17 @@ nav.header-alt {
 }
 
 .workWith {
-  padding: 50px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .workWith h2 {
   margin-bottom: 50px;
 }
 .workWith img {
-  filter: url("http://www.uprisevsi.co.uk/templates/js/filters.svg#grayscale");
   filter: gray;
   -webkit-filter: grayscale(1);
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
   transition: 0.5s ease;
 }
 .workWith img:hover {
