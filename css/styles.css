@@ -72,6 +72,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
   font-size: 20px;
   line-height: 1.1;
+  color: rgba(61, 61, 61, 0.69);
 }
 
 a, p {
@@ -186,19 +187,11 @@ nav.header-alt {
   padding: 25px 0;
 }
 .carousel .carousel-cell {
-  width: 25%;
-  height: 200px;
-  background-color: #2f9bee;
-  background-image: linear-gradient(to right, #2f9bee, #47c9e5);
-  counter-increment: gallery-cell;
+  width: 20%;
 }
-.carousel .carousel-cell:before {
-  display: block;
-  text-align: center;
-  content: counter(gallery-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: white;
+.carousel .carousel-cell img {
+  width: 100%;
+  height: auto;
 }
 
 .portfolioHome {
