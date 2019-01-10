@@ -67,6 +67,7 @@ p {
     font-size: 20px;
     line-height:1.1;
     color:rgba(61,61,61,0.69);
+    margin-bottom: 15px;
 }
 
 a, p {
@@ -166,13 +167,13 @@ nav.header-alt {
     }
     .container {
         position: relative;
-        height: 100vh;
+        height: 100%;
         z-index: 2;
         .bannerLink {
             position: absolute;
             bottom: 15px;
             left: 50%;
-            transform: translate(0,-50%);
+            transform: translate(-50%,0);
             animation: bob 4s ease-in-out infinite;
         }
         .content {
@@ -191,9 +192,9 @@ nav.header-alt {
 
 @media(max-width:560px) {
     .banner {
-        height:50vh;
+        height:80vh;
         .container .content {
-            bottom: 50px;
+            bottom: 150px;
             left: 7.5%;
             right: initial;
             h2 {
