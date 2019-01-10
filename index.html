@@ -34,9 +34,10 @@
                 </div>
                 <div class="col">
                     <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -46,12 +47,13 @@
     <section class="banner">
         <div class="container">
             <div class="content">
-                <a href="#scroll"><h2>Upgrade your digital presence</h2></a>
+                <a href="#about"><h2>Upgrade your digital presence</h2></a>
             </div>
+            <a href="#about" class="bannerLink"><img src="./img/down-chevron.png" /></a>
         </div>
     </section>
 
-    <section id="scroll" class="container intro text-center">
+    <section id="about" class="container intro text-center">
         <div class="row">
             <div class="col">
                 <h2>Web Design and Digital Marketing Agency in Cornwall &amp; Plymouth</h2>
@@ -60,7 +62,7 @@
         </div>
     </section>
 
-    <section class="carousel" data-flickity='{ "wrapAround": true, "pageDots": false, "autoPlay": true, "prevNextButtons": false }'>
+    <section class="carousel" id="services" data-flickity='{ "wrapAround": true, "pageDots": false, "autoPlay": true, "prevNextButtons": false }'>
         <div class="carousel-cell">
             <img src="./img/slide-1.jpg" />
         </div>
@@ -77,11 +79,11 @@
             <img src="./img/slide-5.jpg" />
         </div>
         <div class="carousel-cell">
-            <img src="./img/slide-3.jpg" />
+            <img src="./img/slide-6.jpg" />
         </div>
     </section>
 
-    <section class="portfolioHome">
+    <section class="portfolioHome" id="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col text-center">
@@ -95,31 +97,31 @@
     <div class="grid container">
         <div class="grid-sizer"></div>
         <div class="grid-item">
-            <a href="#"><img src="./img/lime.jpg" /></a>
+            <a href="https://www.limefinance.co.uk/"><img src="./img/lime.jpg" /></a>
             <div class="hover">
                 <img src="./img/lime-logo.png" />
             </div>
         </div>
         <div class="grid-item">
-                <a href="#"><img src="./img/c-blues.jpg" /></a>
+                <a href="http://www.cardiffblues.com/"><img src="./img/c-blues.jpg" /></a>
                 <div class="hover">
                     <img src="./img/blues-logo.png" />
                 </div>
         </div>
         <div class="grid-item">
-                <a href="#"><img src="./img/hj-site.jpg" /></a>
+                <a href="https://www.hughjames.com/"><img src="./img/hj-site.jpg" /></a>
                 <div class="hover">
                     <img src="./img/hj-logo.png" />
                 </div>
         </div>
         <div class="grid-item">
-                <a href="#"><img src="./img/paramount-site.jpg" /></a>
+                <a href="https://paramountinteriors.com/"><img src="./img/paramount-site.jpg" /></a>
                 <div class="hover">
                     <img src="./img/paramount-logo.png" />
                 </div>
         </div>
         <div class="grid-item">
-            <a href="#"><img src="./img/jaguars-site.png" /></a>
+            <a href="https://www.jaguars.com/"><img src="./img/jaguars-site.png" /></a>
                 <div class="hover">
                     <img src="./img/jax-logo.png" />
                 </div>
@@ -178,6 +180,50 @@
             </div>
             <div class="col">
                 <a href="https://paramountinteriors.com/"><img src="./img/pm.jpg" /></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid ctaBanner" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2>Let's Be Friends</h2>
+                    <p>If you have any queries we'd love to have a chat or to explore your desired goals and see how we can help.</p>
+                    <p>You can send me a message using the form or contact me directly on any of the methods below.</p>
+                    <ul>
+                        <li><a href="tel:+447850458625">07850458625</a></li>
+                        <li><a href="mailto:warbz@live.co.uk">warbz@live.co.uk</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 form">
+                    <form action="https://getsimpleform.com/messages?form_api_token=7de12d9ed81348cba8557256e165de57" method="post">
+                        <input type='hidden' name='redirect_to' value='https://fazyyy.github.io/ElementWeb' />
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-6 noPad">
+                                    <div>
+                                        <input type='text' name='Name' placeholder="Name" />
+                                    </div>
+                                    <div>
+                                        <input type='text' name='Email' placeholder="Email" />
+                                    </div>
+                                    <div>
+                                        <input type='tel' name='Number' placeholder="Contact Number" />
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 noPad">
+                                    <div>
+                                        <textarea name='Message' placeholder="How can I help?" rows="15" ></textarea>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <input id="formSubmit" type='submit' value='Send Message' />
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
