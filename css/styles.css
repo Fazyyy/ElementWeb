@@ -414,6 +414,8 @@ nav.header-alt {
   cursor: pointer;
   width: 92.5%;
   transition: 0.5s ease;
+  background: #fff;
+  font-family: "Roboto";
 }
 .ctaBanner .form #formSubmit:hover {
   background: #363636;
