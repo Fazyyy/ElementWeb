@@ -227,6 +227,9 @@ nav.header-alt {
 @media(max-width:460px) {
     .carousel .carousel-cell {
         width: 90%;
+        img {
+            pointer-events: none;
+        }
     }
 }
 
@@ -238,74 +241,84 @@ nav.header-alt {
 /* ---- grid ---- */
 
 .grid {
-        &:after {
-            content: '';
-            display: block;
-            clear: both;
-        }
-        .grid-sizer,
-        .grid-item {
-            width: 360px;
-        }
-        .grid-item {
-            float: left;
-            margin-top: 10px;
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .grid-sizer,
+    .grid-item {
+        width: 360px;
+    }
+    .grid-item {
+        float: left;
+        margin-top: 10px;
+        -webkit-transition: 0.5s ease;
+        -o-transition: 0.5s ease;
+        transition: 0.5s ease;
+        -webkit-box-shadow: 2px 2px 10px 1px rgba(0,0,0,0.4);
+        box-shadow: 2px 2px 10px 1px rgba(0,0,0,0.4);
+        .hover {
+            position:absolute;
+            top:0;
+            left:0;
+            height:100%;
+            width:100%;
+            text-align:center;
+            display:-webkit-box;
+            display:-ms-flexbox;
+            display:flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            background: rgba(0,0,0,0.4);
             -webkit-transition: 0.5s ease;
             -o-transition: 0.5s ease;
             transition: 0.5s ease;
-            -webkit-box-shadow: 2px 2px 10px 1px rgba(0,0,0,0.4);
-            box-shadow: 2px 2px 10px 1px rgba(0,0,0,0.4);
-            .hover {
-                position:absolute;
-                top:0;
-                left:0;
-                height:100%;
-                width:100%;
-                text-align:center;
-                display:-webkit-box;
-                display:-ms-flexbox;
-                display:flex;
-                -webkit-box-orient: vertical;
-                -webkit-box-direction: normal;
-                    -ms-flex-direction: column;
-                        flex-direction: column;
-                -webkit-box-pack: center;
-                    -ms-flex-pack: center;
-                        justify-content: center;
-                background: rgba(0,0,0,0.4);
-                -webkit-transition: 0.5s ease;
-                -o-transition: 0.5s ease;
-                transition: 0.5s ease;
-                pointer-events: none;
-                opacity: 0;
-                h3 {
-                    color: #fff;
-                }
-                img {
-                    display: block;
-                    max-width: 50%;
-                    height: auto;
-                    margin: 0 auto;
-                    opacity: 0;
-                    -webkit-transition: 0.5s ease;
-                    -o-transition: 0.5s ease;
-                    transition: 0.5s ease;
-                }
-            }
-            &:hover {
-                margin-top:5px;
-                .hover {
-                    opacity: 1;
-                }
-                img {
-                    opacity: 1;
-                }
+            pointer-events: none;
+            opacity: 0;
+            h3 {
+                color: #fff;
             }
             img {
                 display: block;
-                max-width: 100%;
+                max-width: 50%;
+                height: auto;
+                margin: 0 auto;
+                opacity: 0;
+                -webkit-transition: 0.5s ease;
+                -o-transition: 0.5s ease;
+                transition: 0.5s ease;
             }
         }
+        &:hover {
+            margin-top:5px;
+            .hover {
+                opacity: 1;
+            }
+            img {
+                opacity: 1;
+            }
+        }
+        img {
+            display: block;
+            max-width: 100%;
+        }
+    }
+}
+
+@media(max-width:991px) {
+    .grid {
+        .grid-item,
+        .grid-sizer {
+            width: 85%;
+            width: calc(50% - 60px);
+        }
+    }
 }
 
 @media(max-width:560px) {

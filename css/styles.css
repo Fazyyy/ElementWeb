@@ -233,6 +233,9 @@ nav.header-alt {
   .carousel .carousel-cell {
     width: 90%;
   }
+  .carousel .carousel-cell img {
+    pointer-events: none;
+  }
 }
 .portfolioHome {
   padding-top: 125px;
@@ -309,6 +312,13 @@ nav.header-alt {
   max-width: 100%;
 }
 
+@media (max-width: 991px) {
+  .grid .grid-item,
+.grid .grid-sizer {
+    width: 85%;
+    width: calc(50% - 60px);
+  }
+}
 @media (max-width: 560px) {
   .grid .grid-item,
 .grid .grid-sizer {
