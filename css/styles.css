@@ -312,11 +312,31 @@ nav.header-alt {
   max-width: 100%;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
+  .grid {
+    max-width: 960px;
+  }
   .grid .grid-item,
 .grid .grid-sizer {
-    width: 85%;
-    width: calc(50% - 60px);
+    width: 460px;
+  }
+}
+@media (max-width: 991px) {
+  .grid {
+    max-width: 720px;
+  }
+  .grid .grid-item,
+.grid .grid-sizer {
+    width: 340px;
+  }
+}
+@media (max-width: 719px) {
+  .grid {
+    max-width: 520px;
+  }
+  .grid .grid-item,
+.grid .grid-sizer {
+    width: 240px;
   }
 }
 @media (max-width: 560px) {
@@ -376,7 +396,11 @@ nav.header-alt {
 }
 
 .ctaBanner {
-  background: url("../img/contact-bg.jpg");
+  background-color: #2f9bee;
+  background-image: -webkit-gradient(linear, left top, right top, from(#2f9bee), to(#47c9e5));
+  background-image: -webkit-linear-gradient(left, #2f9bee, #47c9e5);
+  background-image: -o-linear-gradient(left, #2f9bee, #47c9e5);
+  background-image: linear-gradient(to right, #2f9bee, #47c9e5);
   background-size: cover;
   background-position: center right;
   background-repeat: no-repeat;
@@ -435,10 +459,15 @@ nav.header-alt {
 
 footer {
   background: #363636;
-  padding: 50px;
+  padding: 15px;
+  border-top: 1px solid rgba(1, 1, 1, 0.69);
 }
 footer p, footer a {
   color: #fff;
+  margin: 0;
+}
+footer a:hover {
+  color: #2f9bee;
 }
 
 .t-right {
